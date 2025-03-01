@@ -3,7 +3,6 @@ extends CharacterBody2D
 @onready var label = $Label
 @onready var camera = $"../Camera2D"
 signal pushcamera(direction)
-
 func pushback(number,smallnumber,bignumber):
 	var newnumber = 0
 	if number > bignumber:
@@ -11,7 +10,8 @@ func pushback(number,smallnumber,bignumber):
 	if number < smallnumber:
 		newnumber = (smallnumber - number) / 5
 	return newnumber
-
+func _ready():
+	motion_mode = MOTION_MODE_FLOATING
 func _physics_process(delta: float)-> void:
 	var speed = 500
 	var inputdirection = Vector2(0,0)
