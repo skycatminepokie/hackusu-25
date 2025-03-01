@@ -19,10 +19,10 @@
 [ext_resource type="Texture2D" uid="uid://csrcmfdup0p5i" path="res://Assets/Cats/playerFour/Backward/cat_3_1.png" id="18_kh0gx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gjcjo"]
-size = Vector2(120, 120)
+size = Vector2(108.626, 94.1573)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_w5dpf"]
-size = Vector2(100, 114)
+size = Vector2(80, 88)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_r43ln"]
 animations = [{
@@ -99,14 +99,13 @@ animations = [{
 script = ExtResource("1_odrw6")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(5.4186e-07, -1.11262e-06)
+position = Vector2(9.53674e-07, -9.53674e-07)
 scale = Vector2(0.82853, -0.955847)
 shape = SubResource("RectangleShape2D_gjcjo")
 
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(0, 1)
 shape = SubResource("RectangleShape2D_w5dpf")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
