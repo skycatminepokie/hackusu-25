@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://d0vk82qesqpf7"]
+
+[ext_resource type="Texture2D" uid="uid://ct3dk5k25n1gh" path="res://Assets/BlueLever.png" id="1_bgpca"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_aoxs6"]
+size = Vector2(128, 128)
+
+[node name="Lever" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_bgpca")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_aoxs6")
