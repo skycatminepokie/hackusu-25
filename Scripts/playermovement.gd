@@ -13,25 +13,31 @@ func pushback(number,smallnumber,bignumber):
 func _ready():
 	motion_mode = MOTION_MODE_FLOATING
 	if name == "Player":
-		area.collision_layer = 2
-		area.collision_mask = 2
+		set_collision_layer_value(2,true)
+		set_collision_mask_value(2,true)
 		animation.animation = "player1"
 	if name == "Player2":
-		area.collision_layer = 3
-		area.collision_mask = 3
+		set_collision_layer_value(3,true)
+		set_collision_mask_value(3,true)
 		animation.animation = "player2"
 	if name == "Player3":
-		area.collision_layer = 4
-		area.collision_mask = 4
+		set_collision_layer_value(4,true)
+		set_collision_mask_value(4,true)
 		animation.animation = "player3"
 	if name == "Player4":
-		area.collision_layer = 5
-		area.collision_mask = 5
+		set_collision_layer_value(5,true)
+		set_collision_mask_value(5,true)
 		animation.animation = "player4"
 func _physics_process(delta: float)-> void:
 	var speed = 1000
 	var inputdirection = Vector2(0,0)
 	var screen_position = get_global_transform_with_canvas().origin
+	if name == "Player4":
+		inputdirection.y = Input.get_axis("Up4", "Down4")
+		inputdirection.x = Input.get_axis("Left4", "Right4")
+	if name == "Player3":
+		inputdirection.y = Input.get_axis("Up3", "Down3")
+		inputdirection.x = Input.get_axis("Left3", "Right3")
 	if name == "Player2":
 		inputdirection.y = Input.get_axis("Up2", "Down2")
 		inputdirection.x = Input.get_axis("Left2", "Right2")
