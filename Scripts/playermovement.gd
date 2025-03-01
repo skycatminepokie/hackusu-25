@@ -1,6 +1,5 @@
 extends CharacterBody2D
 
-@onready var label = $Label
 @onready var camera = $"../Camera2D"
 signal pushcamera(direction)
 func pushback(number,smallnumber,bignumber):
