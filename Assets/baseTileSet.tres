@@ -1,4 +1,4 @@
-[gd_resource type="TileSet" load_steps=16 format=3 uid="uid://dfa3m6p0xxq5u"]
+[gd_resource type="TileSet" load_steps=16 format=3 uid="uid://ebmjfg4jisfk"]
 
 [ext_resource type="PackedScene" uid="uid://bq58ytdmv7k5h" path="res://Scenes/Walls/blueWall.tscn" id="1_1dg4q"]
 [ext_resource type="PackedScene" uid="uid://bsx727qbexph5" path="res://Scenes/Buttons/yellowButton.tscn" id="2_3qg8e"]
@@ -8,7 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://chu2hwohmff4p" path="res://Scenes/Paths/redPath.tscn" id="4_6i122"]
 [ext_resource type="PackedScene" uid="uid://d3j45vj75m3jt" path="res://Scenes/Paths/yellowPath.tscn" id="5_hia8a"]
 [ext_resource type="PackedScene" uid="uid://bdcrd8rcmec76" path="res://Scenes/Walls/yellowWall.tscn" id="5_rats0"]
-[ext_resource type="PackedScene" uid="uid://cfe7ug3pwtmyd" path="res://Scenes/Walls/wall.tscn" id="6_201ve"]
+[ext_resource type="PackedScene" uid="uid://by7sjvc12utm1" path="res://Scenes/Walls/wall.tscn" id="6_201ve"]
 [ext_resource type="PackedScene" uid="uid://bvvls7kbs45dx" path="res://Scenes/Buttons/blueButton.tscn" id="7_lbx0e"]
 [ext_resource type="PackedScene" uid="uid://c1utp0s4478i6" path="res://Scenes/Buttons/greenButton.tscn" id="8_cl8qi"]
 [ext_resource type="PackedScene" uid="uid://crcexaobx5lhm" path="res://Scenes/Buttons/redButton.tscn" id="9_mqctb"]

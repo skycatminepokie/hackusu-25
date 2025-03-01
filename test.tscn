@@ -18,12 +18,12 @@
 [ext_resource type="PackedScene" uid="uid://c1utp0s4478i6" path="res://Scenes/Buttons/greenButton.tscn" id="9_m70sc"]
 [ext_resource type="PackedScene" uid="uid://dm7pi0jr3cpwr" path="res://Scenes/stairs.tscn" id="17_ijcpn"]
 
-[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_2upvu"]
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_cpo0e"]
 scenes/1/scene = ExtResource("1_l03jh")
 
 [sub_resource type="TileSet" id="TileSet_qsj3d"]
 tile_size = Vector2i(120, 120)
-sources/0 = SubResource("TileSetScenesCollectionSource_2upvu")
+sources/0 = SubResource("TileSetScenesCollectionSource_cpo0e")
 
 [sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_eki2h"]
 scenes/1/scene = ExtResource("7_4ovuo")
@@ -73,16 +73,3 @@ position = Vector2(164, 998)
 
 [node name="Stairs" parent="." instance=ExtResource("17_ijcpn")]
 position = Vector2(2814, 422)
-
-[connection signal="area_entered" from="TileMapLayer/blueButton" to="TileMapLayer/blueButton" method="_on_area_entered"]
-[connection signal="area_exited" from="TileMapLayer/blueButton" to="TileMapLayer/blueButton" method="_on_area_exited"]
-[connection signal="area_entered" from="TileMapLayer/yellowButton" to="TileMapLayer/yellowButton" method="_on_area_entered"]
-[connection signal="area_exited" from="TileMapLayer/yellowButton" to="TileMapLayer/yellowButton" method="_on_area_exited"]
-[connection signal="area_entered" from="TileMapLayer/redButton" to="TileMapLayer/redButton" method="_on_area_entered"]
-[connection signal="area_exited" from="TileMapLayer/redButton" to="TileMapLayer/redButton" method="_on_area_exited"]
-[connection signal="area_entered" from="TileMapLayer/@Area2D@522679" to="TileMapLayer/@Area2D@522679" method="_on_area_entered"]
-[connection signal="area_exited" from="TileMapLayer/@Area2D@522679" to="TileMapLayer/@Area2D@522679" method="_on_area_exited"]
-[connection signal="area_entered" from="TileMapLayer/@Area2D@522680" to="TileMapLayer/@Area2D@522680" method="_on_area_entered"]
-[connection signal="area_exited" from="TileMapLayer/@Area2D@522680" to="TileMapLayer/@Area2D@522680" method="_on_area_exited"]
-[connection signal="area_entered" from="TileMapLayer/@Area2D@522681" to="TileMapLayer/@Area2D@522681" method="_on_area_entered"]
-[connection signal="area_exited" from="TileMapLayer/@Area2D@522681" to="TileMapLayer/@Area2D@522681" method="_on_area_exited"]

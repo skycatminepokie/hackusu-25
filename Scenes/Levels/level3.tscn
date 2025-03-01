@@ -14,7 +14,13 @@
 [ext_resource type="PackedScene" uid="uid://bq58ytdmv7k5h" path="res://Scenes/Walls/blueWall.tscn" id="7_h6kyu"]
 [ext_resource type="PackedScene" uid="uid://dkqq3ulajt1y3" path="res://Scenes/Walls/greenWall.tscn" id="8_j58mv"]
 [ext_resource type="PackedScene" uid="uid://c1utp0s4478i6" path="res://Scenes/Buttons/greenButton.tscn" id="9_her1c"]
-[ext_resource type="PackedScene" uid="uid://cfe7ug3pwtmyd" path="res://Scenes/Walls/wall.tscn" id="10_s6t5c"]
+[ext_resource type="PackedScene" uid="uid://by7sjvc12utm1" path="res://Scenes/Walls/wall.tscn" id="10_s6t5c"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qys0g"]
+size = Vector2(79, 1089)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oq7ul"]
+size = Vector2(2079, 78)
 
 [sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_qob62"]
 scenes/1/scene = ExtResource("7_h6kyu")
