@@ -43,8 +43,8 @@ func _physics_process(delta: float)-> void:
 			velocity = Vector2(0, speed)
 		Vector2(1,1):
 			velocity = Vector2.ZERO
-	var ypush = pushback(screen_position.y, 60,210)
-	var xpush = pushback(screen_position.x, 60, 420)
+	var ypush = pushback(screen_position.y, 240,840)
+	var xpush = pushback(screen_position.x, 240, 1680)
 	position.y += ypush
 	position.x += xpush
 	camera.position.x -= xpush

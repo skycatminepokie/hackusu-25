@@ -5,10 +5,10 @@
 [ext_resource type="Texture2D" uid="uid://d4j473i5dkwll" path="res://Assets/icon.svg" id="2_ejpn4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dk8tl"]
-size = Vector2(165, 286)
+size = Vector2(165, 1073)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2ico7"]
-size = Vector2(485, 124)
+size = Vector2(1917.5, 124)
 
 [node name="World" type="Node2D"]
 
@@ -18,34 +18,36 @@ position = Vector2(0, -5)
 [node name="StaticBody2D" type="StaticBody2D" parent="Camera2D"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Camera2D/StaticBody2D"]
-position = Vector2(-321, 2)
+position = Vector2(-1044, 1.5)
 shape = SubResource("RectangleShape2D_dk8tl")
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="Camera2D"]
 position = Vector2(-549.557, -643.712)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Camera2D/StaticBody2D2"]
-position = Vector2(876.557, 655.712)
+position = Vector2(1590.56, 635.712)
 shape = SubResource("RectangleShape2D_dk8tl")
 
 [node name="StaticBody2D3" type="StaticBody2D" parent="Camera2D"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Camera2D/StaticBody2D3"]
-position = Vector2(1, -199)
+position = Vector2(-5.75, -603)
 shape = SubResource("RectangleShape2D_2ico7")
 
 [node name="StaticBody2D3" type="StaticBody2D" parent="Camera2D/StaticBody2D3"]
 position = Vector2(-183.561, 736.672)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Camera2D/StaticBody2D3/StaticBody2D3"]
-position = Vector2(187.561, -539.672)
+position = Vector2(200.561, -135.672)
 shape = SubResource("RectangleShape2D_2ico7")
 
 [node name="Player" parent="." instance=ExtResource("1_th2ir")]
 position = Vector2(-133, 44)
+scale = Vector2(2.0416, 1.98857)
 
 [node name="Player2" parent="." instance=ExtResource("2_51shq")]
 position = Vector2(112, -45)
+scale = Vector2(2.0416, 1.98857)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(-3.5, 5.5)
