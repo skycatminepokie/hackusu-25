@@ -73,16 +73,3 @@ position = Vector2(164, 998)
 
 [node name="Stairs" parent="." instance=ExtResource("17_ijcpn")]
 position = Vector2(1853, 1014)
-
-[connection signal="area_entered" from="TileMapLayer/blueButton" to="TileMapLayer/blueButton" method="_on_area_entered"]
-[connection signal="area_exited" from="TileMapLayer/blueButton" to="TileMapLayer/blueButton" method="_on_area_exited"]
-[connection signal="area_entered" from="TileMapLayer/yellowButton" to="TileMapLayer/yellowButton" method="_on_area_entered"]
-[connection signal="area_exited" from="TileMapLayer/yellowButton" to="TileMapLayer/yellowButton" method="_on_area_exited"]
-[connection signal="area_entered" from="TileMapLayer/redButton" to="TileMapLayer/redButton" method="_on_area_entered"]
-[connection signal="area_exited" from="TileMapLayer/redButton" to="TileMapLayer/redButton" method="_on_area_exited"]
-[connection signal="area_entered" from="TileMapLayer/@Area2D@508102" to="TileMapLayer/@Area2D@508102" method="_on_area_entered"]
-[connection signal="area_exited" from="TileMapLayer/@Area2D@508102" to="TileMapLayer/@Area2D@508102" method="_on_area_exited"]
-[connection signal="area_entered" from="TileMapLayer/@Area2D@508103" to="TileMapLayer/@Area2D@508103" method="_on_area_entered"]
-[connection signal="area_exited" from="TileMapLayer/@Area2D@508103" to="TileMapLayer/@Area2D@508103" method="_on_area_exited"]
-[connection signal="area_entered" from="TileMapLayer/@Area2D@508104" to="TileMapLayer/@Area2D@508104" method="_on_area_entered"]
-[connection signal="area_exited" from="TileMapLayer/@Area2D@508104" to="TileMapLayer/@Area2D@508104" method="_on_area_exited"]
