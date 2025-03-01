@@ -111,4 +111,4 @@ shape = SubResource("RectangleShape2D_w5dpf")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_r43ln")
-animation = &"player2"
+animation = &"player1"

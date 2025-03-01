@@ -17,8 +17,8 @@ func _ready():
 		area.collision_mask = 2
 		animation.animation = "player1"
 	if name == "Player2":
-		area.collision_layer = 3
-		area.collision_mask = 3
+		set_collision_layer_value(3,true)
+		set_collision_mask_value(3,true)
 		animation.animation = "player2"
 	if name == "Player3":
 		area.collision_layer = 4

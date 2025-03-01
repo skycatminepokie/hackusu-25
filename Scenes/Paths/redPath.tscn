@@ -6,8 +6,8 @@
 size = Vector2(120, 120)
 
 [node name="Path2" type="StaticBody2D"]
-collision_layer = 29
-collision_mask = 29
+collision_layer = 28
+collision_mask = 28
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_8a1w1")
