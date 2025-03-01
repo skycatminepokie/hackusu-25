@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=4 uid="uid://estqd38hxad2"]
+[gd_scene load_steps=22 format=4 uid="uid://estqd38hxad2"]
 
 [ext_resource type="PackedScene" uid="uid://cxsqw66da7hwb" path="res://Scenes/camera.tscn" id="1_71hfv"]
 [ext_resource type="PackedScene" uid="uid://mchjcwekn7nt" path="res://Scenes/FloorTile.tscn" id="1_l03jh"]
@@ -16,6 +16,7 @@
 [ext_resource type="PackedScene" uid="uid://by7sjvc12utm1" path="res://Scenes/Walls/wall.tscn" id="7_q0f5w"]
 [ext_resource type="PackedScene" uid="uid://dkqq3ulajt1y3" path="res://Scenes/Walls/greenWall.tscn" id="8_nvu7v"]
 [ext_resource type="PackedScene" uid="uid://c1utp0s4478i6" path="res://Scenes/Buttons/greenButton.tscn" id="9_m70sc"]
+[ext_resource type="PackedScene" uid="uid://dm7pi0jr3cpwr" path="res://Scenes/stairs.tscn" id="17_ijcpn"]
 
 [sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_2upvu"]
 scenes/1/scene = ExtResource("1_l03jh")
@@ -69,3 +70,19 @@ position = Vector2(173, 841)
 
 [node name="Player4" parent="." instance=ExtResource("3_2c11v")]
 position = Vector2(164, 998)
+
+[node name="Stairs" parent="." instance=ExtResource("17_ijcpn")]
+position = Vector2(1853, 1014)
+
+[connection signal="area_entered" from="TileMapLayer/blueButton" to="TileMapLayer/blueButton" method="_on_area_entered"]
+[connection signal="area_exited" from="TileMapLayer/blueButton" to="TileMapLayer/blueButton" method="_on_area_exited"]
+[connection signal="area_entered" from="TileMapLayer/yellowButton" to="TileMapLayer/yellowButton" method="_on_area_entered"]
+[connection signal="area_exited" from="TileMapLayer/yellowButton" to="TileMapLayer/yellowButton" method="_on_area_exited"]
+[connection signal="area_entered" from="TileMapLayer/redButton" to="TileMapLayer/redButton" method="_on_area_entered"]
+[connection signal="area_exited" from="TileMapLayer/redButton" to="TileMapLayer/redButton" method="_on_area_exited"]
+[connection signal="area_entered" from="TileMapLayer/@Area2D@508102" to="TileMapLayer/@Area2D@508102" method="_on_area_entered"]
+[connection signal="area_exited" from="TileMapLayer/@Area2D@508102" to="TileMapLayer/@Area2D@508102" method="_on_area_exited"]
+[connection signal="area_entered" from="TileMapLayer/@Area2D@508103" to="TileMapLayer/@Area2D@508103" method="_on_area_entered"]
+[connection signal="area_exited" from="TileMapLayer/@Area2D@508103" to="TileMapLayer/@Area2D@508103" method="_on_area_exited"]
+[connection signal="area_entered" from="TileMapLayer/@Area2D@508104" to="TileMapLayer/@Area2D@508104" method="_on_area_entered"]
+[connection signal="area_exited" from="TileMapLayer/@Area2D@508104" to="TileMapLayer/@Area2D@508104" method="_on_area_exited"]
