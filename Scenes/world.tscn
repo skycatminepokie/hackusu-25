@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://d1xsbkrw11y3g"]
+[gd_scene load_steps=6 format=3 uid="uid://d1xsbkrw11y3g"]
 
 [ext_resource type="PackedScene" uid="uid://bf3m1gtwvtkc7" path="res://Scenes/player.tscn" id="1_th2ir"]
+[ext_resource type="PackedScene" uid="uid://xqmb1lepx0tp" path="res://player2.tscn" id="2_51shq"]
 [ext_resource type="Texture2D" uid="uid://d4j473i5dkwll" path="res://Assets/icon.svg" id="2_ejpn4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dk8tl"]
@@ -43,7 +44,10 @@ shape = SubResource("RectangleShape2D_2ico7")
 [node name="Player" parent="." instance=ExtResource("1_th2ir")]
 position = Vector2(-133, 44)
 
+[node name="Player2" parent="." instance=ExtResource("2_51shq")]
+position = Vector2(112, -45)
+
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(117, -92)
-scale = Vector2(0.48, 0.44)
+position = Vector2(-3.5, 5.5)
+scale = Vector2(0.945313, 1.08594)
 texture = ExtResource("2_ejpn4")

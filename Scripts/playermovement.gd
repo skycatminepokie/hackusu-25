@@ -2,23 +2,26 @@ extends CharacterBody2D
 
 @onready var label = $Label
 @onready var camera = $"../Camera2D"
-
 signal pushcamera(direction)
 
 func pushback(number,smallnumber,bignumber):
 	var newnumber = 0
 	if number > bignumber:
-		newnumber = ((number - bignumber) * -1) / 14
+		newnumber = ((number - bignumber) * -1) / 5
 	if number < smallnumber:
-		newnumber = (smallnumber - number) / 14
+		newnumber = (smallnumber - number) / 5
 	return newnumber
 
 func _physics_process(delta: float)-> void:
 	var speed = 500
 	var inputdirection = Vector2(0,0)
 	var screen_position = get_global_transform_with_canvas().origin
-	inputdirection.y = Input.get_axis("Up", "Down")
-	inputdirection.x = Input.get_axis("Left", "Right")
+	if name == "Player2":
+		inputdirection.y = Input.get_axis("Up2", "Down2")
+		inputdirection.x = Input.get_axis("Left2", "Right2")
+	if name == "Player":
+		inputdirection.y = Input.get_axis("Up", "Down")
+		inputdirection.x = Input.get_axis("Left", "Right")
 	match inputdirection:
 		Vector2(-1,1):
 			velocity = Vector2(0,speed)
