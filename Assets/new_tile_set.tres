@@ -1,19 +1,10 @@
-[gd_resource type="TileSet" load_steps=9 format=3 uid="uid://bxi1wmx4lvepc"]
+[gd_resource type="TileSet" load_steps=7 format=3 uid="uid://bxi1wmx4lvepc"]
 
-[ext_resource type="Texture2D" uid="uid://b7obg5kw7acmq" path="res://Assets/Walls/wall.png" id="1_mbubf"]
 [ext_resource type="PackedScene" uid="uid://b3ueccpkvpmeg" path="res://Scenes/Paths/bluePath.tscn" id="2_iuwf4"]
 [ext_resource type="PackedScene" uid="uid://ds1nra0betg5o" path="res://Scenes/Paths/greenPath.tscn" id="3_bh0ud"]
 [ext_resource type="PackedScene" uid="uid://chu2hwohmff4p" path="res://Scenes/Paths/redPath.tscn" id="4_lyhsp"]
 [ext_resource type="PackedScene" uid="uid://d3j45vj75m3jt" path="res://Scenes/Paths/yellowPath.tscn" id="5_8qgdk"]
 [ext_resource type="PackedScene" uid="uid://by7sjvc12utm1" path="res://Scenes/Walls/wall.tscn" id="6_v52in"]
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wro8x"]
-texture = ExtResource("1_mbubf")
-texture_region_size = Vector2i(32, 32)
-0:0/0 = 0
-1:0/0 = 0
-0:1/0 = 0
-1:1/0 = 0
 
 [sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_4715n"]
 resource_name = "Paths"
@@ -25,5 +16,4 @@ scenes/5/scene = ExtResource("6_v52in")
 
 [resource]
 tile_size = Vector2i(120, 120)
-sources/0 = SubResource("TileSetAtlasSource_wro8x")
 sources/5 = SubResource("TileSetScenesCollectionSource_4715n")
