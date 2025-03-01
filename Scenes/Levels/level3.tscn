@@ -1,0 +1,50 @@
+[gd_scene load_steps=12 format=4 uid="uid://2he13w5w264h"]
+
+[ext_resource type="TileSet" uid="uid://bxi1wmx4lvepc" path="res://Assets/new_tile_set.tres" id="1_ude4m"]
+[ext_resource type="PackedScene" uid="uid://bq58ytdmv7k5h" path="res://Scenes/Walls/blueWall.tscn" id="2_xp65h"]
+[ext_resource type="PackedScene" uid="uid://dkqq3ulajt1y3" path="res://Scenes/Walls/greenWall.tscn" id="3_fvmqt"]
+[ext_resource type="PackedScene" uid="uid://yrx45q4kjw1s" path="res://Scenes/Walls/redWall.tscn" id="4_xkm2n"]
+[ext_resource type="PackedScene" uid="uid://bdcrd8rcmec76" path="res://Scenes/Walls/yellowWall.tscn" id="5_m72he"]
+[ext_resource type="PackedScene" uid="uid://bsx727qbexph5" path="res://Scenes/Buttons/yellowButton.tscn" id="6_mpmlh"]
+[ext_resource type="PackedScene" uid="uid://bvvls7kbs45dx" path="res://Scenes/Buttons/blueButton.tscn" id="7_4lqmv"]
+[ext_resource type="PackedScene" uid="uid://c1utp0s4478i6" path="res://Scenes/Buttons/greenButton.tscn" id="8_pctbq"]
+[ext_resource type="PackedScene" uid="uid://crcexaobx5lhm" path="res://Scenes/Buttons/redButton.tscn" id="9_v6sus"]
+
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_vao37"]
+resource_name = "Components"
+scenes/1/scene = ExtResource("2_xp65h")
+scenes/2/scene = ExtResource("3_fvmqt")
+scenes/3/scene = ExtResource("4_xkm2n")
+scenes/4/scene = ExtResource("5_m72he")
+
+[sub_resource type="TileSet" id="TileSet_4rsor"]
+tile_size = Vector2i(32, 32)
+sources/0 = SubResource("TileSetScenesCollectionSource_vao37")
+
+[node name="Level3" type="Node2D"]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray("AAAOAAMAAAAAAAAAAAANAAMAAAAAAAAAAAAPAAMAAAAAAAAAAAAQAAMAAAAAAAAAAAAQAAQAAAAAAAAAAAAQAAUAAAAAAAAAAAAPAAUAAAAAAAAAAAAOAAUAAAAAAAAAAAANAAUAAAAAAAAAAAAOAAQABQAAAAAAAwAFAAYAAAAAAAAAAAAFAAcAAAAAAAAAAAAFAAgAAAAAAAAAAAAFAAkAAAAAAAAAAAAEAAkAAAAAAAAAAAADAAkAAAAAAAAAAAADAAgAAAAAAAAAAAADAAcAAAAAAAAAAAADAAYAAAAAAAAAAAAEAAcABQAAAAAAAgAQAAYAAAAAAAAAAAAQAAcAAAAAAAAAAAAQAAgAAAAAAAAAAAAQAAkAAAAAAAAAAAAPAAkAAAAAAAAAAAAGAAkAAAAAAAAAAAAIAAkAAAAAAAAAAAAHAAkAAAAAAAAAAAAJAAkAAAAAAAAAAAAKAAkAAAAAAAAAAAALAAkAAAAAAAAAAAAMAAkAAAAAAAAAAAANAAkAAAAAAAAAAAAOAAkAAAAAAAAAAAAQAAIAAAAAAAAAAAAQAAEAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAP//AAAAAAAAAAAQAP7/AAAAAAAAAAAPAP7/AAAAAAAAAAAOAP7/AAAAAAAAAAANAP7/AAAAAAAAAAAMAP7/AAAAAAAAAAALAP7/AAAAAAAAAAAKAP7/AAAAAAAAAAAJAP7/AAAAAAAAAAAIAP7/AAAAAAAAAAAHAP7/AAAAAAAAAAAGAP7/AAAAAAAAAAAFAP7/AAAAAAAAAAAEAP7/AAAAAAAAAAADAP7/AAAAAAAAAAACAP7/AAAAAAAAAAABAP7/AAAAAAAAAAAAAP7/AAAAAAAAAAD///7/AAAAAAAAAAD+//7/AAAAAAAAAAD+////AAAAAAAAAAD+/wAAAAAAAAAAAAD//wAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAP//BQAAAAAAAQD9//7/AAAAAAAAAAD8//7/AAAAAAAAAAD7//7/AAAAAAAAAAD6//7/AAAAAAAAAAD5//7/AAAAAAAAAAD4//7/AAAAAAAAAAD3//7/AAAAAAAAAAD1//7/AAAAAAAAAAD2//7/AAAAAAAAAAD1////AAAAAAAAAAD1/wAAAAAAAAAAAAD1/wEAAAAAAAAAAAD1/wIAAAAAAAAAAAD1/wMAAAAAAAAAAAD1/wQAAAAAAAAAAAD1/wUAAAAAAAAAAAD1/wYAAAAAAAAAAAD1/wcAAAAAAAAAAAD1/wgAAAAAAAAAAAD1/wkAAAAAAAAAAAD2/wkAAAAAAAAAAAD3/wkAAAAAAAAAAAD4/wkAAAAAAAAAAAD5/wkAAAAAAAAAAAD6/wkAAAAAAAAAAAD7/wkAAAAAAAAAAAD8/wkAAAAAAAAAAAD9/wkAAAAAAAAAAAD+/wkAAAAAAAAAAAD//wkAAAAAAAAAAAABAAkAAAAAAAAAAAACAAkAAAAAAAAAAAAAAAkAAAAAAAAAAAABAAgABQAAAAAAAwABAAcABQAAAAAAAwACAAcABQAAAAAAAwD7/wgABQAAAAAABAD7/wcABQAAAAAABAD6/wcABQAAAAAABAD5/wcABQAAAAAABAD5/wgABQAAAAAABAD4/wEABQAAAAAABAD4/wIABQAAAAAABAD4/wMABQAAAAAABAD5/wMABQAAAAAABAD6/wMABQAAAAAABAD6/wIABQAAAAAABAD6/wEABQAAAAAABAD5/wEABQAAAAAABAA=")
+tile_set = ExtResource("1_ude4m")
+
+[node name="TileMapLayer2" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray("AAANAAQAAAAAAAAAAgAEAAYAAAAAAAAABAABAP//AAAAAAAAAwADAAUAAAAAAAAAAQACAAUAAAAAAAAAAQABAAUAAAAAAAAAAQAAAAUAAAAAAAAAAQD//wUAAAAAAAAAAQD+/wUAAAAAAAAAAQD9/wUAAAAAAAAAAQD9/wYAAAAAAAAABAD+/wYAAAAAAAAABAD//wYAAAAAAAAABAAAAAYAAAAAAAAABAABAAYAAAAAAAAABAACAAYAAAAAAAAABAD8/wUAAAAAAAAAAwD7/wUAAAAAAAAAAwD6/wUAAAAAAAAAAwD5/wUAAAAAAAAAAwD4/wUAAAAAAAAAAwD3/wUAAAAAAAAAAwD2/wUAAAAAAAAAAwD8/wYAAAAAAAAAAgD7/wYAAAAAAAAAAgD6/wYAAAAAAAAAAgD5/wYAAAAAAAAAAgD4/wYAAAAAAAAAAgD3/wYAAAAAAAAAAgD2/wYAAAAAAAAAAgA=")
+tile_set = SubResource("TileSet_4rsor")
+
+[node name="Button" parent="." instance=ExtResource("6_mpmlh")]
+position = Vector2(-176, 272)
+
+[node name="Button2" parent="." instance=ExtResource("6_mpmlh")]
+position = Vector2(-208, 80)
+
+[node name="Button3" parent="." instance=ExtResource("7_4lqmv")]
+position = Vector2(-16, -16)
+
+[node name="Button4" parent="." instance=ExtResource("8_pctbq")]
+position = Vector2(144, 272)
+
+[node name="Button5" parent="." instance=ExtResource("9_v6sus")]
+position = Vector2(80, 272)
+
+[node name="Button6" parent="." instance=ExtResource("9_v6sus")]
+position = Vector2(496, 144)

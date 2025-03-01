@@ -1,15 +1,15 @@
-[gd_scene load_steps=3 format=3 uid="uid://cfe7ug3pwtmyd"]
+[gd_scene load_steps=3 format=3 uid="uid://yrx45q4kjw1s"]
 
-[ext_resource type="Texture2D" uid="uid://b6o13w74qpdbt" path="res://Assets/Wall.png" id="1_cra4n"]
+[ext_resource type="Texture2D" uid="uid://dvt3ibi2e5pu8" path="res://Assets/Walls/redWall.png" id="1_awhld"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3g4e4"]
-size = Vector2(64, 64)
+size = Vector2(32, 32)
 
 [node name="Wall" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(1.90735e-06, -1.90735e-06)
-texture = ExtResource("1_cra4n")
+texture = ExtResource("1_awhld")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 

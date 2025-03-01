@@ -1,6 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://crcexaobx5lhm"]
+[gd_scene load_steps=3 format=3 uid="uid://bsx727qbexph5"]
 
-[ext_resource type="Texture2D" uid="uid://ce6y10wchs25y" path="res://Assets/RedButton.png" id="1_8kryt"]
+[ext_resource type="Texture2D" uid="uid://bd2ru5xvq0rpl" path="res://Assets/Buttons/yellowButton.png" id="1_ltmn6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_l3e0r"]
 size = Vector2(32, 32)
@@ -8,7 +8,7 @@ size = Vector2(32, 32)
 [node name="Button" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_8kryt")
+texture = ExtResource("1_ltmn6")
 
 [node name="Area2D" type="Area2D" parent="."]
 
