@@ -87,18 +87,3 @@ position = Vector2(-300, 60)
 
 [node name="Player4" parent="." instance=ExtResource("3_u4t7c")]
 position = Vector2(-300, -60)
-
-[connection signal="area_entered" from="TileMapLayer/@Area2D@19097" to="TileMapLayer/@Area2D@19097" method="_on_area_entered"]
-[connection signal="area_exited" from="TileMapLayer/@Area2D@19097" to="TileMapLayer/@Area2D@19097" method="_on_area_exited"]
-[connection signal="area_entered" from="TileMapLayer/@Area2D@19131" to="TileMapLayer/@Area2D@19131" method="_on_area_entered"]
-[connection signal="area_exited" from="TileMapLayer/@Area2D@19131" to="TileMapLayer/@Area2D@19131" method="_on_area_exited"]
-[connection signal="area_entered" from="TileMapLayer/@Area2D@19147" to="TileMapLayer/@Area2D@19147" method="_on_area_entered"]
-[connection signal="area_exited" from="TileMapLayer/@Area2D@19147" to="TileMapLayer/@Area2D@19147" method="_on_area_exited"]
-[connection signal="area_entered" from="TileMapLayer/@Area2D@19167" to="TileMapLayer/@Area2D@19167" method="_on_area_entered"]
-[connection signal="area_exited" from="TileMapLayer/@Area2D@19167" to="TileMapLayer/@Area2D@19167" method="_on_area_exited"]
-[connection signal="area_entered" from="TileMapLayer/@Area2D@19178" to="TileMapLayer/@Area2D@19178" method="_on_area_entered"]
-[connection signal="area_exited" from="TileMapLayer/@Area2D@19178" to="TileMapLayer/@Area2D@19178" method="_on_area_exited"]
-[connection signal="area_entered" from="TileMapLayer/@Area2D@19187" to="TileMapLayer/@Area2D@19187" method="_on_area_entered"]
-[connection signal="area_exited" from="TileMapLayer/@Area2D@19187" to="TileMapLayer/@Area2D@19187" method="_on_area_exited"]
-[connection signal="area_entered" from="TileMapLayer/yellowButton" to="TileMapLayer/yellowButton" method="_on_area_entered"]
-[connection signal="area_exited" from="TileMapLayer/yellowButton" to="TileMapLayer/yellowButton" method="_on_area_exited"]
