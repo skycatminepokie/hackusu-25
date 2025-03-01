@@ -1,11 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://yrx45q4kjw1s"]
+[gd_scene load_steps=4 format=3 uid="uid://yrx45q4kjw1s"]
 
+[ext_resource type="Script" path="res://Scripts/wall.gd" id="1_45po3"]
 [ext_resource type="Texture2D" uid="uid://dvt3ibi2e5pu8" path="res://Assets/Walls/redWall.png" id="1_awhld"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3g4e4"]
 size = Vector2(120, 120)
 
 [node name="Wall" type="Node2D" groups=["Red Wall"]]
+script = ExtResource("1_45po3")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(3.75, 3.75)

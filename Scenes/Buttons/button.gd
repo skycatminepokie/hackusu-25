@@ -1,6 +1,6 @@
 extends Node2D
 var pressedBy:int = 0
-
+@onready var label = $Label
 func isPressed() -> bool:
 	return pressedBy > 0
 
@@ -10,10 +10,25 @@ func _ready() -> void:
 
 func _on_area_entered(area: Area2D) -> void:
 	pressedBy += 1
-	get_tree().call_group("Yellow Wall", "disappear")
-
-
+	print("Area Entered"+label.text)
+	match label.text:
+		"yellowButton":
+			get_tree().call_group("Yellow Wall", "disappear")
+		"blueButton":
+			get_tree().call_group("Blue Wall", "disappear")
+		"redButton":
+			get_tree().call_group("Red Wall", "disappear")
+		"greenButton":
+			get_tree().call_group("Green Wall", "disappear")
 func _on_area_exited(area: Area2D) -> void:
 	pressedBy -= 1
 	if pressedBy == 0:
-		get_tree().call_group("Yellow Wall", "reappear")
+		match label.text:
+			"yellowButton":
+				get_tree().call_group("Yellow Wall", "reappear")
+			"blueButton":
+				get_tree().call_group("Blue Wall", "reappear")
+			"redButton":
+				get_tree().call_group("Red Wall", "reappear")
+			"greenButton":
+				get_tree().call_group("Green Wall", "reappear")
