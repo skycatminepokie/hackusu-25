@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://b3ueccpkvpmeg"]
 
-[ext_resource type="Texture2D" uid="uid://doivbv275k54y" path="res://Assets/Paths/BluePath.png" id="1_kvau5"]
+[ext_resource type="Texture2D" uid="uid://d3fqbn4nlgcvd" path="res://Assets/Floor Tiles/Blue tile.png" id="1_4hsw8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0g7bs"]
 size = Vector2(120, 120)
@@ -14,5 +14,4 @@ shape = SubResource("RectangleShape2D_0g7bs")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(-1.90735e-06, -0.5)
-scale = Vector2(3.75, 3.78125)
-texture = ExtResource("1_kvau5")
+texture = ExtResource("1_4hsw8")
