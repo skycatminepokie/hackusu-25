@@ -1,5 +1,6 @@
 extends CharacterBody2D
 const SPEED = 300
+@onready var label = $Label
 func _physics_process(delta: float)-> void:
 	var screen_position = global_position
 	var inputdirection_y := Input.get_axis("Up", "Down")
@@ -16,6 +17,5 @@ func _physics_process(delta: float)-> void:
 		velocity.x = SPEED
 	if inputdirection_x == 0:
 		velocity.x = 0
-	if screen_position.y > 600:
-		print("I'm pushing something")
+	label.text = screen_position
 	move_and_slide()
