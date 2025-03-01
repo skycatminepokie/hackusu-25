@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bvgyybg23xaka"
-path="res://.godot/imported/p2b1.png-434de522521c8cab0c156b6a168817eb.ctex"
+uid="uid://brwsei240rhf3"
+path="res://.godot/imported/Main Tile.png-95cc4553d22015dcdee534a80a7ada18.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Cats/playerTwo/Backward/p2b1.png"
-dest_files=["res://.godot/imported/p2b1.png-434de522521c8cab0c156b6a168817eb.ctex"]
+source_file="res://Assets/Floor Tiles/Main Tile.png"
+dest_files=["res://.godot/imported/Main Tile.png-95cc4553d22015dcdee534a80a7ada18.ctex"]
 
 [params]
 
