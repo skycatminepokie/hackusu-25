@@ -5,14 +5,14 @@ signal pushcamera(direction)
 func pushback(number,smallnumber,bignumber):
 	var newnumber = 0
 	if number > bignumber:
-		newnumber = ((number - bignumber) * -1) / 5
+		newnumber = ((number - bignumber) * -1) / 14
 	if number < smallnumber:
-		newnumber = (smallnumber - number) / 5
+		newnumber = (smallnumber - number) / 14
 	return newnumber
 func _ready():
 	motion_mode = MOTION_MODE_FLOATING
 func _physics_process(delta: float)-> void:
-	var speed = 500
+	var speed = 1000
 	var inputdirection = Vector2(0,0)
 	var screen_position = get_global_transform_with_canvas().origin
 	if name == "Player2":
