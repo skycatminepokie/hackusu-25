@@ -27,6 +27,13 @@ window/stretch/aspect="ignore"
 
 project/assembly_name="HackUSU 25"
 
+[global_group]
+
+"Blue Wall"=""
+"Red Wall"=""
+"Yellow Wall"=""
+"Green Wall"=""
+
 [input]
 
 Up={

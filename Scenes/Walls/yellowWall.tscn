@@ -5,7 +5,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3g4e4"]
 size = Vector2(120, 120)
 
-[node name="Wall" type="Node2D"]
+[node name="Wall" type="Node2D" groups=["Yellow Wall"]]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(3.75, 3.75)
