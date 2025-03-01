@@ -30,12 +30,3 @@ position = Vector2(-60, 900)
 position = Vector2(420, 900)
 
 [node name="Camera2D" parent="." instance=ExtResource("5_7pwl7")]
-
-[connection signal="area_entered" from="TileMapLayer/greenButton" to="TileMapLayer/greenButton" method="_on_area_entered"]
-[connection signal="area_exited" from="TileMapLayer/greenButton" to="TileMapLayer/greenButton" method="_on_area_exited"]
-[connection signal="area_entered" from="TileMapLayer/redButton" to="TileMapLayer/redButton" method="_on_area_entered"]
-[connection signal="area_exited" from="TileMapLayer/redButton" to="TileMapLayer/redButton" method="_on_area_exited"]
-[connection signal="area_entered" from="TileMapLayer/blueButton" to="TileMapLayer/blueButton" method="_on_area_entered"]
-[connection signal="area_exited" from="TileMapLayer/blueButton" to="TileMapLayer/blueButton" method="_on_area_exited"]
-[connection signal="area_entered" from="TileMapLayer/yellowButton" to="TileMapLayer/yellowButton" method="_on_area_entered"]
-[connection signal="area_exited" from="TileMapLayer/yellowButton" to="TileMapLayer/yellowButton" method="_on_area_exited"]
