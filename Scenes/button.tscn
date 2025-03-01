@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://crcexaobx5lhm"]
+
+[ext_resource type="Texture2D" uid="uid://b4vod8eq83oeo" path="res://Assets/RedButton.png" id="1_8kryt"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l3e0r"]
+size = Vector2(128, 128)
+
+[node name="Button" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_8kryt")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_l3e0r")
