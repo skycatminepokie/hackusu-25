@@ -1,22 +1,41 @@
-[gd_scene load_steps=3 format=4 uid="uid://dg3wv1bg6yv56"]
+[gd_scene load_steps=6 format=4 uid="uid://dg3wv1bg6yv56"]
 
-[ext_resource type="TileSet" uid="uid://bxi1wmx4lvepc" path="res://Assets/new_tile_set.tres" id="1_2nk3q"]
-[ext_resource type="PackedScene" uid="uid://d0vk82qesqpf7" path="res://Scenes/lever.tscn" id="6_rq2av"]
+[ext_resource type="TileSet" uid="uid://dfa3m6p0xxq5u" path="res://Assets/baseTileSet.tres" id="1_7l0ao"]
+[ext_resource type="PackedScene" uid="uid://bf3m1gtwvtkc7" path="res://Scenes/player.tscn" id="1_kc16p"]
+[ext_resource type="PackedScene" uid="uid://dm7pi0jr3cpwr" path="res://Scenes/stairs.tscn" id="2_dvv5u"]
+[ext_resource type="Script" path="res://Scenes/level2Stairs.gd" id="3_3qwad"]
+[ext_resource type="PackedScene" path="res://Scenes/camera.tscn" id="5_7pwl7"]
 
 [node name="Level2" type="Node2D"]
 
-[node name="CollisionTileMap" type="TileMapLayer" parent="."]
-tile_map_data = PackedByteArray("AAAFAAIAAAAAAAAAAAABAAgAAAAAAAAAAAAAAAgAAAAAAAAAAAD//wgAAAAAAAAAAAD+/wgAAAAAAAAAAAD+/wAAAAAAAAAAAAAOAAAAAAAAAAAAAAANAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAALAAAAAAAAAAAAAAAKAAAAAAAAAAAAAAAJAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAHAAAAAAAAAAAAAAAGAAAAAAAAAAAAAAAFAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAADAAAAAAAAAAAAAAACAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAAAAAAAAAAAAAGAAIAAAAAAAAAAAAHAAIAAAAAAAAAAAAIAAIAAAAAAAAAAAAJAAIAAAAAAAAAAAAKAAIAAAAAAAAAAAALAAIAAAAAAAAAAAAMAAIAAAAAAAAAAAANAAIAAAAAAAAAAAAOAAIAAAAAAAAAAAAOAAEAAAAAAAAAAAAEAAIAAAAAAAAAAAADAAIAAAAAAAAAAAACAAIAAAAAAAAAAAACAAcAAAAAAAAAAAACAAYAAAAAAAAAAAACAAUAAAAAAAAAAAACAAQAAAAAAAAAAAACAAMAAAAAAAAAAAACAAgAAAAAAAAAAAD9/wgAAAAAAAAAAAD8/wgAAAAAAAAAAAD8/wAAAAAAAAAAAAD9/wAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAAcAAAAAAAAAAAD+/wcAAAAAAAAAAAD+/wYAAAAAAAAAAAD+/wUAAAAAAAAAAAD+/wQAAAAAAAAAAAD+/wMAAAAAAAAAAAD+/wIAAAAAAAAAAAD8/wcAAAAAAAAAAAD8/wYAAAAAAAAAAAD8/wUAAAAAAAAAAAD8/wQAAAAAAAAAAAD8/wMAAAAAAAAAAAD8/wIAAAAAAAAAAAD7/wgAAAAAAAAAAAD6/wgAAAAAAAAAAAD6/wcAAAAAAAAAAAD6/wYAAAAAAAAAAAD6/wUAAAAAAAAAAAD6/wQAAAAAAAAAAAD6/wMAAAAAAAAAAAD6/wIAAAAAAAAAAAD6/wEAAAAAAAAAAAD6/wAAAAAAAAAAAAD7/wAAAAAAAAAAAAABAAYABQAAAAAAAQABAAUABQAAAAAAAQABAAQABQAAAAAAAQABAAMABQAAAAAAAQABAAIABQAAAAAAAQD//wYABQAAAAAAAgD//wUABQAAAAAAAgD//wQABQAAAAAAAgD//wMABQAAAAAAAgD//wIABQAAAAAAAgD9/wYABQAAAAAAAwD9/wUABQAAAAAAAwD9/wQABQAAAAAAAwD9/wMABQAAAAAAAwD9/wIABQAAAAAAAwD7/wYABQAAAAAABAD7/wUABQAAAAAABAD7/wQABQAAAAAABAD7/wMABQAAAAAABAD7/wIABQAAAAAABAA=")
-tile_set = ExtResource("1_2nk3q")
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray("AAAPAAAAAAAAAAAABQAOAAAAAAAAAAAABQANAAAAAAAAAAAABQAMAAAAAAAAAAAABQALAAAAAAAAAAAABQAKAAAAAAAAAAAABQAJAAAAAAAAAAAABQAIAAAAAAAAAAAABQAHAAAAAAAAAAAABQAGAAAAAAAAAAAABQAFAAAAAAAAAAAABQAEAAAAAAAAAAAABQADAAAAAAAAAAAABQACAAAAAAAAAAAABQABAAAAAAAAAAAABQAAAAAAAAAAAAAABQD//wAAAAAAAAAABQD+/wAAAAAAAAAABQD9/wAAAAAAAAAABQD8/wAAAAAAAAAABQD8/wMAAAAAAAAABQD8/wQAAAAAAAAABQD8/wUAAAAAAAAABQD8/wYAAAAAAAAABQD8/wIAAAAAAAAABQD8/wEAAAAAAAAABQD8/wcAAAAAAAAABQD8/wgAAAAAAAAABQD9/wgAAAAAAAAABQD+/wgAAAAAAAAABQD+/wcAAAAAAAAABQD+/wYAAAAAAAAABQD+/wUAAAAAAAAABQAAAAUAAAAAAAAABQAAAAYAAAAAAAAABQAAAAcAAAAAAAAABQAAAAgAAAAAAAAABQD//wgAAAAAAAAABQACAAUAAAAAAAAABQACAAYAAAAAAAAABQACAAcAAAAAAAAABQACAAgAAAAAAAAABQABAAgAAAAAAAAABQAEAAUAAAAAAAAABQAEAAYAAAAAAAAABQAEAAcAAAAAAAAABQAEAAgAAAAAAAAABQADAAgAAAAAAAAABQAFAAMAAAAAAAAABQAEAAQAAAAAAAAABQAEAAMAAAAAAAAABQAGAAMAAAAAAAAABQALAAMAAAAAAAAABQAMAAMAAAAAAAAABQANAAMAAAAAAAAABQAOAAMAAAAAAAAABQAPAAMAAAAAAAAABQAPAAIAAAAAAAAABQAPAAEAAAAAAAAABQAKAAMAAAAAAAAABQAJAAMAAAAAAAAABQAIAAMAAAAAAAAABQAHAAMAAAAAAAAABQADAAYAAAAAAAAABgADAAUAAAAAAAAABgADAAcAAAAAAAAACAABAAUAAAAAAAAAAgABAAYAAAAAAAAADQABAAcAAAAAAAAACQD//wYAAAAAAAAAAwD//wUAAAAAAAAADAD//wcAAAAAAAAABwD9/wYAAAAAAAAACwD9/wUAAAAAAAAACwD9/wcAAAAAAAAACgA=")
+tile_set = ExtResource("1_7l0ao")
 
-[node name="Lever" parent="." instance=ExtResource("6_rq2av")]
-position = Vector2(-144, 240)
+[node name="Stairs" parent="." instance=ExtResource("2_dvv5u")]
+visible = false
+position = Vector2(60, 420)
+script = ExtResource("3_3qwad")
 
-[node name="Lever2" parent="." instance=ExtResource("6_rq2av")]
-position = Vector2(-80, 240)
+[node name="Player" parent="." instance=ExtResource("1_kc16p")]
+position = Vector2(-300, 540)
 
-[node name="Lever3" parent="." instance=ExtResource("6_rq2av")]
-position = Vector2(-16, 240)
+[node name="Player2" parent="." instance=ExtResource("1_kc16p")]
+position = Vector2(180, 900)
 
-[node name="Lever4" parent="." instance=ExtResource("6_rq2av")]
-position = Vector2(48, 240)
+[node name="Player3" parent="." instance=ExtResource("1_kc16p")]
+position = Vector2(-60, 900)
+
+[node name="Player4" parent="." instance=ExtResource("1_kc16p")]
+position = Vector2(420, 900)
+
+[node name="Camera2D" parent="." instance=ExtResource("5_7pwl7")]
+
+[connection signal="area_entered" from="TileMapLayer/greenButton" to="TileMapLayer/greenButton" method="_on_area_entered"]
+[connection signal="area_exited" from="TileMapLayer/greenButton" to="TileMapLayer/greenButton" method="_on_area_exited"]
+[connection signal="area_entered" from="TileMapLayer/redButton" to="TileMapLayer/redButton" method="_on_area_entered"]
+[connection signal="area_exited" from="TileMapLayer/redButton" to="TileMapLayer/redButton" method="_on_area_exited"]
+[connection signal="area_entered" from="TileMapLayer/blueButton" to="TileMapLayer/blueButton" method="_on_area_entered"]
+[connection signal="area_exited" from="TileMapLayer/blueButton" to="TileMapLayer/blueButton" method="_on_area_exited"]
+[connection signal="area_entered" from="TileMapLayer/yellowButton" to="TileMapLayer/yellowButton" method="_on_area_entered"]
+[connection signal="area_exited" from="TileMapLayer/yellowButton" to="TileMapLayer/yellowButton" method="_on_area_exited"]

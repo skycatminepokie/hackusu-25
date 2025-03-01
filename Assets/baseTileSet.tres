@@ -1,0 +1,36 @@
+[gd_resource type="TileSet" load_steps=15 format=3 uid="uid://dfa3m6p0xxq5u"]
+
+[ext_resource type="PackedScene" uid="uid://bq58ytdmv7k5h" path="res://Scenes/Walls/blueWall.tscn" id="1_1dg4q"]
+[ext_resource type="PackedScene" uid="uid://bsx727qbexph5" path="res://Scenes/Buttons/yellowButton.tscn" id="2_3qg8e"]
+[ext_resource type="PackedScene" uid="uid://ds1nra0betg5o" path="res://Scenes/Paths/greenPath.tscn" id="3_2wydr"]
+[ext_resource type="PackedScene" uid="uid://dkqq3ulajt1y3" path="res://Scenes/Walls/greenWall.tscn" id="3_nujyc"]
+[ext_resource type="PackedScene" uid="uid://yrx45q4kjw1s" path="res://Scenes/Walls/redWall.tscn" id="4_2vnln"]
+[ext_resource type="PackedScene" uid="uid://chu2hwohmff4p" path="res://Scenes/Paths/redPath.tscn" id="4_6i122"]
+[ext_resource type="PackedScene" uid="uid://d3j45vj75m3jt" path="res://Scenes/Paths/yellowPath.tscn" id="5_hia8a"]
+[ext_resource type="PackedScene" uid="uid://bdcrd8rcmec76" path="res://Scenes/Walls/yellowWall.tscn" id="5_rats0"]
+[ext_resource type="PackedScene" uid="uid://cfe7ug3pwtmyd" path="res://Scenes/Walls/wall.tscn" id="6_201ve"]
+[ext_resource type="PackedScene" uid="uid://bvvls7kbs45dx" path="res://Scenes/Buttons/blueButton.tscn" id="7_lbx0e"]
+[ext_resource type="PackedScene" uid="uid://c1utp0s4478i6" path="res://Scenes/Buttons/greenButton.tscn" id="8_cl8qi"]
+[ext_resource type="PackedScene" uid="uid://crcexaobx5lhm" path="res://Scenes/Buttons/redButton.tscn" id="9_mqctb"]
+[ext_resource type="PackedScene" uid="uid://b3ueccpkvpmeg" path="res://Scenes/Paths/bluePath.tscn" id="10_0xv0q"]
+
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_eki2h"]
+scenes/1/scene = ExtResource("1_1dg4q")
+scenes/2/scene = ExtResource("3_nujyc")
+scenes/3/scene = ExtResource("4_2vnln")
+scenes/4/scene = ExtResource("5_rats0")
+scenes/5/scene = ExtResource("6_201ve")
+scenes/7/scene = ExtResource("7_lbx0e")
+scenes/8/scene = ExtResource("8_cl8qi")
+scenes/9/scene = ExtResource("9_mqctb")
+scenes/10/scene = ExtResource("2_3qg8e")
+scenes/11/scene = ExtResource("3_2wydr")
+scenes/12/scene = ExtResource("10_0xv0q")
+scenes/13/scene = ExtResource("4_6i122")
+scenes/14/scene = ExtResource("5_hia8a")
+scenes/15/scene = ExtResource("10_0xv0q")
+scenes/16/scene = ExtResource("3_2wydr")
+
+[resource]
+tile_size = Vector2i(120, 120)
+sources/0 = SubResource("TileSetScenesCollectionSource_eki2h")
