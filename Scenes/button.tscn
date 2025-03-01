@@ -1,9 +1,9 @@
 [gd_scene load_steps=3 format=3 uid="uid://crcexaobx5lhm"]
 
-[ext_resource type="Texture2D" uid="uid://b4vod8eq83oeo" path="res://Assets/RedButton.png" id="1_8kryt"]
+[ext_resource type="Texture2D" uid="uid://ce6y10wchs25y" path="res://Assets/RedButton.png" id="1_8kryt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_l3e0r"]
-size = Vector2(128, 128)
+size = Vector2(32, 32)
 
 [node name="Button" type="Node2D"]
 

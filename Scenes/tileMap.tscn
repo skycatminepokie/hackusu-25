@@ -1,0 +1,52 @@
+[gd_scene load_steps=12 format=3 uid="uid://c56r4wg2w637a"]
+
+[ext_resource type="Texture2D" uid="uid://doivbv275k54y" path="res://Assets/BluePath.png" id="1_yr8cy"]
+[ext_resource type="Texture2D" uid="uid://b7obg5kw7acmq" path="res://Assets/wall.png" id="2_p6to6"]
+[ext_resource type="Texture2D" uid="uid://dom34uv2udbpl" path="res://Assets/redPath.png" id="3_tpkdj"]
+[ext_resource type="Texture2D" uid="uid://idnxuxjw6guu" path="res://Assets/yellowPath.png" id="4_akyn7"]
+[ext_resource type="Texture2D" uid="uid://cg2haha86v2sq" path="res://Assets/greenPath.png" id="5_caxak"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ffgvg"]
+texture = ExtResource("1_yr8cy")
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_j48fe"]
+texture = ExtResource("2_p6to6")
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tnymq"]
+texture = ExtResource("3_tpkdj")
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_eqdty"]
+texture = ExtResource("4_akyn7")
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_th7tj"]
+texture = ExtResource("5_caxak")
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_wclka"]
+sources/1 = SubResource("TileSetAtlasSource_ffgvg")
+sources/4 = SubResource("TileSetAtlasSource_j48fe")
+sources/5 = SubResource("TileSetAtlasSource_tnymq")
+sources/6 = SubResource("TileSetAtlasSource_eqdty")
+sources/7 = SubResource("TileSetAtlasSource_th7tj")
+
+[node name="TileMapLayer" type="TileMapLayer"]
+tile_set = SubResource("TileSet_wclka")

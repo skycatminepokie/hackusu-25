@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b16go55cd7b4l"
-path="res://.godot/imported/BlueLever.png-a428c588056add1180ea81f2cb251c5f.ctex"
+uid="uid://doivbv275k54y"
+path="res://.godot/imported/BluePath.png-806a50b748c240d2a3a4a4b2c8c86c0d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/BlueLever.png"
-dest_files=["res://.godot/imported/BlueLever.png-a428c588056add1180ea81f2cb251c5f.ctex"]
+source_file="res://Assets/BluePath.png"
+dest_files=["res://.godot/imported/BluePath.png-806a50b748c240d2a3a4a4b2c8c86c0d.ctex"]
 
 [params]
 
