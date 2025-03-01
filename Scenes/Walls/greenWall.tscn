@@ -1,11 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://dkqq3ulajt1y3"]
+[gd_scene load_steps=4 format=3 uid="uid://dkqq3ulajt1y3"]
 
 [ext_resource type="Texture2D" uid="uid://dr24qi42rtjlr" path="res://Assets/Walls/greenWall.png" id="1_1ompp"]
+[ext_resource type="Script" path="res://Scripts/wall.gd" id="1_teujd"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3g4e4"]
 size = Vector2(120, 120)
 
 [node name="Wall" type="Node2D" groups=["Green Wall"]]
+script = ExtResource("1_teujd")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(3.75, 3.75)
