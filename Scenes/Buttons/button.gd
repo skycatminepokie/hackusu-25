@@ -6,7 +6,21 @@ func isPressed() -> bool:
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	pass
+	#match label.text:
+		#"yellowButton":
+			#self.collision_layer = 4
+			#self.collision_mask = 4
+		#"blueButton":
+			#self.collision_layer = 3
+			#self.collision_mask = 3
+		#"redButton":
+			#self.collision_layer = 2
+			#self.collision_mask = 2
+		#"greenButton":
+			#self.collision_layer = 5
+			#self.collision_mask = 5
+			
 
 func _on_area_entered(area: Area2D) -> void:
 	pressedBy += 1
