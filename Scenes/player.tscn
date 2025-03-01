@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://nfubhcvtanof" path="res://Assets/Cats/playerTwo/Forward/p2f1.png" id="4_3cp11"]
 [ext_resource type="Texture2D" uid="uid://d0pkep12mik1f" path="res://Assets/Cats/playerOne/Left/p1l1.png" id="4_6jyb6"]
 [ext_resource type="Texture2D" uid="uid://bfca5piwvku8g" path="res://Assets/Cats/playerThree/Forward/p3f1.png" id="5_f3f0j"]
-[ext_resource type="Texture2D" uid="uid://eefd4ew4ybi8" path="res://Assets/Cats/playerOne/p1b1.png" id="5_n0qgj"]
+[ext_resource type="Texture2D" path="res://Assets/Cats/playerOne/p1b1.png" id="5_n0qgj"]
 [ext_resource type="Texture2D" uid="uid://dy2pcn7aasqt7" path="res://Assets/Cats/playerOne/Right/p1r1.png" id="5_x040s"]
 [ext_resource type="Texture2D" uid="uid://bm4pjir4b0cmx" path="res://Assets/Cats/playerFour/Forward/cat_0_1 (4).png" id="6_exsh3"]
 [ext_resource type="Texture2D" uid="uid://owbo1av7egmc" path="res://Assets/Cats/playerTwo/Left/p2l1.png" id="8_4rapf"]
