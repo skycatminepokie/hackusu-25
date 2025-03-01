@@ -1,0 +1,34 @@
+[gd_scene load_steps=4 format=3 uid="uid://iuu8ot58b1ln"]
+
+[ext_resource type="PackedScene" uid="uid://bf3m1gtwvtkc7" path="res://Scenes/player.tscn" id="1_pvv7p"]
+[ext_resource type="PackedScene" uid="uid://crcexaobx5lhm" path="res://Scenes/button.tscn" id="2_sas5p"]
+[ext_resource type="PackedScene" uid="uid://de2p726clrlc" path="res://Scenes/stairs.tscn" id="3_gbs3x"]
+
+[node name="Level1" type="Node2D"]
+
+[node name="Button" parent="." instance=ExtResource("2_sas5p")]
+position = Vector2(384, 768)
+
+[node name="Button2" parent="." instance=ExtResource("2_sas5p")]
+position = Vector2(384, -64)
+
+[node name="Button3" parent="." instance=ExtResource("2_sas5p")]
+position = Vector2(1472, -64)
+
+[node name="Button4" parent="." instance=ExtResource("2_sas5p")]
+position = Vector2(1472, 768)
+
+[node name="Stairs" parent="." instance=ExtResource("3_gbs3x")]
+position = Vector2(960, 384)
+
+[node name="Player" parent="." instance=ExtResource("1_pvv7p")]
+position = Vector2(704, 1024)
+
+[node name="Player2" parent="." instance=ExtResource("1_pvv7p")]
+position = Vector2(896, 1024)
+
+[node name="Player3" parent="." instance=ExtResource("1_pvv7p")]
+position = Vector2(1088, 1024)
+
+[node name="Player4" parent="." instance=ExtResource("1_pvv7p")]
+position = Vector2(1280, 1024)
