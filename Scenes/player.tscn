@@ -4,10 +4,9 @@
 [ext_resource type="Texture2D" uid="uid://d4j473i5dkwll" path="res://Assets/icon.svg" id="1_xy00n"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gjcjo"]
-size = Vector2(87.7787, 78.1158)
+size = Vector2(120, 120)
 
 [node name="Player" type="CharacterBody2D"]
-scale = Vector2(0.44, 0.428571)
 script = ExtResource("1_odrw6")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -16,5 +15,6 @@ scale = Vector2(0.82853, -0.955847)
 shape = SubResource("RectangleShape2D_gjcjo")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.568182, 0.583334)
+position = Vector2(-1.90735e-06, 0)
+scale = Vector2(0.78125, 0.875001)
 texture = ExtResource("1_xy00n")

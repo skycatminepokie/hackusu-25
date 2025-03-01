@@ -3,12 +3,12 @@
 [ext_resource type="Texture2D" uid="uid://dvt3ibi2e5pu8" path="res://Assets/Walls/redWall.png" id="1_awhld"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3g4e4"]
-size = Vector2(32, 32)
+size = Vector2(120, 120)
 
 [node name="Wall" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(1.90735e-06, -1.90735e-06)
+scale = Vector2(3.75, 3.75)
 texture = ExtResource("1_awhld")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
