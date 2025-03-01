@@ -1,10 +1,9 @@
-[gd_scene load_steps=8 format=4 uid="uid://iuu8ot58b1ln"]
+[gd_scene load_steps=7 format=4 uid="uid://iuu8ot58b1ln"]
 
 [ext_resource type="PackedScene" uid="uid://bf3m1gtwvtkc7" path="res://Scenes/player.tscn" id="1_pvv7p"]
 [ext_resource type="Script" path="res://Scenes/Levels/level_1.gd" id="1_stwi0"]
 [ext_resource type="PackedScene" uid="uid://crcexaobx5lhm" path="res://Scenes/Buttons/redButton.tscn" id="2_sas5p"]
 [ext_resource type="PackedScene" uid="uid://dm7pi0jr3cpwr" path="res://Scenes/stairs.tscn" id="3_gbs3x"]
-[ext_resource type="Script" path="res://Scenes/stairs.gd" id="4_42i5f"]
 [ext_resource type="PackedScene" path="res://Scenes/camera.tscn" id="6_he71c"]
 [ext_resource type="TileSet" uid="uid://bxi1wmx4lvepc" path="res://Assets/new_tile_set.tres" id="7_5rd1l"]
 
@@ -26,7 +25,6 @@ position = Vector2(1504, 640)
 [node name="Stairs" parent="." instance=ExtResource("3_gbs3x")]
 visible = false
 position = Vector2(960, 384)
-script = ExtResource("4_42i5f")
 
 [node name="Player" parent="." instance=ExtResource("1_pvv7p")]
 position = Vector2(384, 832)
