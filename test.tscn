@@ -1,6 +1,6 @@
 [gd_scene load_steps=14 format=4 uid="uid://estqd38hxad2"]
 
-[ext_resource type="PackedScene" uid="uid://cxsqw66da7hwb" path="res://Scenes/camera.tscn" id="1_71hfv"]
+[ext_resource type="PackedScene" path="res://Scenes/camera.tscn" id="1_71hfv"]
 [ext_resource type="PackedScene" uid="uid://bdcrd8rcmec76" path="res://Scenes/Walls/yellowWall.tscn" id="1_pfo0o"]
 [ext_resource type="PackedScene" uid="uid://bsx727qbexph5" path="res://Scenes/Buttons/yellowButton.tscn" id="2_eft1d"]
 [ext_resource type="PackedScene" uid="uid://bf3m1gtwvtkc7" path="res://Scenes/player.tscn" id="3_2c11v"]
@@ -8,11 +8,11 @@
 [ext_resource type="PackedScene" uid="uid://yrx45q4kjw1s" path="res://Scenes/Walls/redWall.tscn" id="5_y7ss1"]
 [ext_resource type="PackedScene" uid="uid://bvvls7kbs45dx" path="res://Scenes/Buttons/blueButton.tscn" id="6_gql4n"]
 [ext_resource type="PackedScene" uid="uid://bq58ytdmv7k5h" path="res://Scenes/Walls/blueWall.tscn" id="7_4ovuo"]
-[ext_resource type="PackedScene" uid="uid://by7sjvc12utm1" path="res://Scenes/Walls/wall.tscn" id="7_q0f5w"]
+[ext_resource type="PackedScene" uid="uid://cfe7ug3pwtmyd" path="res://Scenes/Walls/wall.tscn" id="7_q0f5w"]
 [ext_resource type="PackedScene" uid="uid://dkqq3ulajt1y3" path="res://Scenes/Walls/greenWall.tscn" id="8_nvu7v"]
 [ext_resource type="PackedScene" uid="uid://c1utp0s4478i6" path="res://Scenes/Buttons/greenButton.tscn" id="9_m70sc"]
 
-[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_eki2h"]
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_f600w"]
 scenes/1/scene = ExtResource("7_4ovuo")
 scenes/2/scene = ExtResource("8_nvu7v")
 scenes/3/scene = ExtResource("5_y7ss1")
@@ -25,7 +25,7 @@ scenes/10/scene = ExtResource("2_eft1d")
 
 [sub_resource type="TileSet" id="TileSet_1715k"]
 tile_size = Vector2i(120, 120)
-sources/0 = SubResource("TileSetScenesCollectionSource_eki2h")
+sources/0 = SubResource("TileSetScenesCollectionSource_f600w")
 
 [node name="Node2D" type="Node2D"]
 
@@ -47,12 +47,3 @@ position = Vector2(173, 841)
 
 [node name="Player4" parent="." instance=ExtResource("3_2c11v")]
 position = Vector2(164, 998)
-
-[connection signal="area_entered" from="TileMapLayer/yellowButton" to="TileMapLayer/yellowButton" method="_on_area_entered"]
-[connection signal="area_exited" from="TileMapLayer/yellowButton" to="TileMapLayer/yellowButton" method="_on_area_exited"]
-[connection signal="area_entered" from="TileMapLayer/redButton" to="TileMapLayer/redButton" method="_on_area_entered"]
-[connection signal="area_exited" from="TileMapLayer/redButton" to="TileMapLayer/redButton" method="_on_area_exited"]
-[connection signal="area_entered" from="TileMapLayer/greenButton" to="TileMapLayer/greenButton" method="_on_area_entered"]
-[connection signal="area_exited" from="TileMapLayer/greenButton" to="TileMapLayer/greenButton" method="_on_area_exited"]
-[connection signal="area_entered" from="TileMapLayer/blueButton" to="TileMapLayer/blueButton" method="_on_area_entered"]
-[connection signal="area_exited" from="TileMapLayer/blueButton" to="TileMapLayer/blueButton" method="_on_area_exited"]
