@@ -46,13 +46,4 @@ func _physics_process(delta: float)-> void:
 	position.x += xpush
 	camera.position.x -= xpush
 	camera.position.y -= ypush
-
-	#if screen_position.y > 840 or screen_position.y < 240:
-		#position.y += pushback(screen_position.y, 240,840)
-	#if screen_position.x > 1680 or screen_position.x < 240:
-		#position.x += pushback(screen_position.x, 240, 1680)
-		
-		
-	label.text = str(inputdirection)
-	
 	move_and_slide()
