@@ -17,5 +17,4 @@ func _physics_process(delta: float)-> void:
 		velocity.x = SPEED
 	if inputdirection_x == 0:
 		velocity.x = 0
-	label.text = screen_position
 	move_and_slide()
