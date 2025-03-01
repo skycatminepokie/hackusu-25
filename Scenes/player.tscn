@@ -18,4 +18,3 @@ shape = SubResource("RectangleShape2D_gjcjo")
 position = Vector2(-1.90735e-06, 0)
 scale = Vector2(0.78125, 0.875001)
 texture = ExtResource("1_xy00n")
-metadata/Player2 = true
