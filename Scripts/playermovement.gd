@@ -32,6 +32,12 @@ func _physics_process(delta: float)-> void:
 	var speed = 1000
 	var inputdirection = Vector2(0,0)
 	var screen_position = get_global_transform_with_canvas().origin
+	if name == "Player4":
+		inputdirection.y = Input.get_axis("Up4", "Down4")
+		inputdirection.x = Input.get_axis("Left4", "Right4")
+	if name == "Player3":
+		inputdirection.y = Input.get_axis("Up3", "Down3")
+		inputdirection.x = Input.get_axis("Left3", "Right3")
 	if name == "Player2":
 		inputdirection.y = Input.get_axis("Up2", "Down2")
 		inputdirection.x = Input.get_axis("Left2", "Right2")
