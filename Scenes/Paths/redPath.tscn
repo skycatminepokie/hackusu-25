@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://chu2hwohmff4p"]
 
-[ext_resource type="Texture2D" uid="uid://dom34uv2udbpl" path="res://Assets/Paths/redPath.png" id="1_1hj1f"]
+[ext_resource type="Texture2D" uid="uid://c21e6o2yn4mtl" path="res://Assets/Floor Tiles/Red tile.png" id="1_8a1w1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0g7bs"]
 size = Vector2(120, 120)
@@ -8,9 +8,7 @@ size = Vector2(120, 120)
 [node name="Path" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(-1.90735e-06, -1.90735e-06)
-scale = Vector2(3.75, 3.75)
-texture = ExtResource("1_1hj1f")
+texture = ExtResource("1_8a1w1")
 
 [node name="Area2D" type="Area2D" parent="."]
 
