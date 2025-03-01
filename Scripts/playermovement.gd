@@ -1,5 +1,5 @@
 extends CharacterBody2D
-
+@onready var area = $Area2D
 @onready var camera = $"../Camera2D"
 signal pushcamera(direction)
 func pushback(number,smallnumber,bignumber):
@@ -11,6 +11,11 @@ func pushback(number,smallnumber,bignumber):
 	return newnumber
 func _ready():
 	motion_mode = MOTION_MODE_FLOATING
+	if name == "Player":
+		area.collision_layer = 2
+		area.collision_mask = 2
+	if name == "Player2":
+		area.collision_layer = 3
 func _physics_process(delta: float)-> void:
 	var speed = 1000
 	var inputdirection = Vector2(0,0)
