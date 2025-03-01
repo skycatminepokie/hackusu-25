@@ -4,7 +4,7 @@
 [ext_resource type="Script" path="res://Scenes/Buttons/button.gd" id="1_vo8yx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_l3e0r"]
-size = Vector2(120, 120)
+size = Vector2(119, 119)
 
 [node name="greenButton" type="Area2D"]
 script = ExtResource("1_vo8yx")
