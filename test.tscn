@@ -57,12 +57,3 @@ position = Vector2(173, 841)
 
 [node name="Player4" parent="." instance=ExtResource("3_2c11v")]
 position = Vector2(164, 998)
-
-[connection signal="area_entered" from="TileMapLayer/yellowButton" to="TileMapLayer/yellowButton" method="_on_area_entered"]
-[connection signal="area_exited" from="TileMapLayer/yellowButton" to="TileMapLayer/yellowButton" method="_on_area_exited"]
-[connection signal="area_entered" from="TileMapLayer/redButton" to="TileMapLayer/redButton" method="_on_area_entered"]
-[connection signal="area_exited" from="TileMapLayer/redButton" to="TileMapLayer/redButton" method="_on_area_exited"]
-[connection signal="area_entered" from="TileMapLayer/greenButton" to="TileMapLayer/greenButton" method="_on_area_entered"]
-[connection signal="area_exited" from="TileMapLayer/greenButton" to="TileMapLayer/greenButton" method="_on_area_exited"]
-[connection signal="area_entered" from="TileMapLayer/blueButton" to="TileMapLayer/blueButton" method="_on_area_entered"]
-[connection signal="area_exited" from="TileMapLayer/blueButton" to="TileMapLayer/blueButton" method="_on_area_exited"]

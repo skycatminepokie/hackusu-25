@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://chu2hwohmff4p"]
+[gd_scene load_steps=4 format=3 uid="uid://chu2hwohmff4p"]
 
 [ext_resource type="Texture2D" uid="uid://c21e6o2yn4mtl" path="res://Assets/Floor Tiles/Red tile.png" id="1_8a1w1"]
+[ext_resource type="Texture2D" uid="uid://butwoykljalxv" path="res://Assets/Cats/playerOne/Forward/p1f1.png" id="2_o2wvf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0g7bs"]
 size = Vector2(120, 120)
@@ -9,8 +10,12 @@ size = Vector2(120, 120)
 collision_layer = 28
 collision_mask = 28
 
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_0g7bs")
+
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_8a1w1")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("RectangleShape2D_0g7bs")
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.588235)
+texture = ExtResource("2_o2wvf")
