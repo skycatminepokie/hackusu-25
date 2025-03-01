@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bmmusk145j3fc"
-path="res://.godot/imported/cat_2_1 (1).png-a0468a845951eb84c76358839f48bf48.ctex"
+path="res://.godot/imported/cat_2_1 (1).png-6b839a954c1e9123dae5065cebae35fd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://cat_2_1 (1).png"
-dest_files=["res://.godot/imported/cat_2_1 (1).png-a0468a845951eb84c76358839f48bf48.ctex"]
+source_file="res://Assets/Cats/playerFour/Right/cat_2_1 (1).png"
+dest_files=["res://.godot/imported/cat_2_1 (1).png-6b839a954c1e9123dae5065cebae35fd.ctex"]
 
 [params]
 
