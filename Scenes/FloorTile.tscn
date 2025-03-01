@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://mchjcwekn7nt"]
+
+[ext_resource type="Texture2D" uid="uid://brwsei240rhf3" path="res://Assets/Floor Tiles/Main Tile.png" id="1_dyclu"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Node2D" type="Sprite2D" parent="."]
+position = Vector2(-1.90735e-06, 1.90735e-06)
+texture = ExtResource("1_dyclu")

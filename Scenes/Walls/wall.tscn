@@ -1,4 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://by7sjvc12utm1"]
+[gd_scene load_steps=3 format=3 uid="uid://by7sjvc12utm1"]
+
+[ext_resource type="Texture2D" uid="uid://q2hkyo7uvf0i" path="res://Assets/Walls/wall.png" id="1_cra4n"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hfg7e"]
 size = Vector2(120, 120)
@@ -8,9 +10,5 @@ size = Vector2(120, 120)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_hfg7e")
 
-[node name="ColorRect" type="ColorRect" parent="CollisionShape2D"]
-offset_left = -60.0
-offset_top = -60.0
-offset_right = 61.0
-offset_bottom = 60.0
-color = Color(0, 0, 0, 1)
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_cra4n")
