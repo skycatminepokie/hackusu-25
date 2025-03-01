@@ -1,8 +1,9 @@
-[gd_scene load_steps=13 format=4 uid="uid://estqd38hxad2"]
+[gd_scene load_steps=14 format=4 uid="uid://estqd38hxad2"]
 
 [ext_resource type="PackedScene" uid="uid://cxsqw66da7hwb" path="res://Scenes/camera.tscn" id="1_71hfv"]
 [ext_resource type="PackedScene" uid="uid://bdcrd8rcmec76" path="res://Scenes/Walls/yellowWall.tscn" id="1_pfo0o"]
 [ext_resource type="PackedScene" uid="uid://bsx727qbexph5" path="res://Scenes/Buttons/yellowButton.tscn" id="2_eft1d"]
+[ext_resource type="PackedScene" uid="uid://bf3m1gtwvtkc7" path="res://Scenes/player.tscn" id="3_2c11v"]
 [ext_resource type="PackedScene" uid="uid://crcexaobx5lhm" path="res://Scenes/Buttons/redButton.tscn" id="4_o5ble"]
 [ext_resource type="PackedScene" uid="uid://yrx45q4kjw1s" path="res://Scenes/Walls/redWall.tscn" id="5_y7ss1"]
 [ext_resource type="PackedScene" uid="uid://bvvls7kbs45dx" path="res://Scenes/Buttons/blueButton.tscn" id="6_gql4n"]
@@ -35,11 +36,23 @@ position = Vector2(968, 541)
 tile_map_data = PackedByteArray("AAAFAAAAAAAAAAAAAQAFAAEAAAAAAAAAAQAFAAIAAAAAAAAAAQAGAAIAAAAAAAAAAQAGAAMAAAAAAAAAAQAGAAQAAAAAAAAAAQAGAAUAAAAAAAAAAQAGAAYAAAAAAAAAAQALAAQAAAAAAAAAAgALAAUAAAAAAAAAAgALAAYAAAAAAAAAAgALAAcAAAAAAAAAAgAMAAcAAAAAAAAAAgAMAAgAAAAAAAAAAgAIAAAAAAAAAAAAAwAJAAAAAAAAAAAAAwAKAAAAAAAAAAAAAwALAAAAAAAAAAAAAwAJAAIAAAAAAAAABAAJAAMAAAAAAAAABAALAAIAAAAAAAAACgANAAAAAAAAAAAACQAOAAQAAAAAAAAACAAEAAYAAAAAAAAABwA=")
 tile_set = SubResource("TileSet_1715k")
 
-[connection signal="area_entered" from="TileMapLayer/@Area2D@379943" to="TileMapLayer/@Area2D@379943" method="_on_area_entered"]
-[connection signal="area_exited" from="TileMapLayer/@Area2D@379943" to="TileMapLayer/@Area2D@379943" method="_on_area_exited"]
-[connection signal="area_entered" from="TileMapLayer/@Area2D@379944" to="TileMapLayer/@Area2D@379944" method="_on_area_entered"]
-[connection signal="area_exited" from="TileMapLayer/@Area2D@379944" to="TileMapLayer/@Area2D@379944" method="_on_area_exited"]
-[connection signal="area_entered" from="TileMapLayer/@Area2D@379945" to="TileMapLayer/@Area2D@379945" method="_on_area_entered"]
-[connection signal="area_exited" from="TileMapLayer/@Area2D@379945" to="TileMapLayer/@Area2D@379945" method="_on_area_exited"]
-[connection signal="area_entered" from="TileMapLayer/@Area2D@379946" to="TileMapLayer/@Area2D@379946" method="_on_area_entered"]
-[connection signal="area_exited" from="TileMapLayer/@Area2D@379946" to="TileMapLayer/@Area2D@379946" method="_on_area_exited"]
+[node name="Player" parent="." instance=ExtResource("3_2c11v")]
+position = Vector2(221, 531)
+
+[node name="Player2" parent="." instance=ExtResource("3_2c11v")]
+position = Vector2(209, 664)
+
+[node name="Player3" parent="." instance=ExtResource("3_2c11v")]
+position = Vector2(173, 841)
+
+[node name="Player4" parent="." instance=ExtResource("3_2c11v")]
+position = Vector2(164, 998)
+
+[connection signal="area_entered" from="TileMapLayer/yellowButton" to="TileMapLayer/yellowButton" method="_on_area_entered"]
+[connection signal="area_exited" from="TileMapLayer/yellowButton" to="TileMapLayer/yellowButton" method="_on_area_exited"]
+[connection signal="area_entered" from="TileMapLayer/redButton" to="TileMapLayer/redButton" method="_on_area_entered"]
+[connection signal="area_exited" from="TileMapLayer/redButton" to="TileMapLayer/redButton" method="_on_area_exited"]
+[connection signal="area_entered" from="TileMapLayer/greenButton" to="TileMapLayer/greenButton" method="_on_area_entered"]
+[connection signal="area_exited" from="TileMapLayer/greenButton" to="TileMapLayer/greenButton" method="_on_area_exited"]
+[connection signal="area_entered" from="TileMapLayer/blueButton" to="TileMapLayer/blueButton" method="_on_area_entered"]
+[connection signal="area_exited" from="TileMapLayer/blueButton" to="TileMapLayer/blueButton" method="_on_area_exited"]
