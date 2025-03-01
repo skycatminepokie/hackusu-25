@@ -4,7 +4,7 @@ const SPEED = 500
 func _physics_process(delta: float)-> void:
 	var inputdirection = Vector2(0,0)
 	var screen_position = global_position
-	inputdirection.y == Input.get_axis("Up", "Down")
+	inputdirection.y = Input.get_axis("Up", "Down")
 	inputdirection.x = Input.get_axis("Left", "Right")
 	match inputdirection:
 		Vector2(0,0):
@@ -14,9 +14,9 @@ func _physics_process(delta: float)-> void:
 		Vector2(-1,0):
 			velocity = Vector2(SPEED * -1,0)
 		Vector2(0,-1):
-			velocity = Vector2(0,SPEED)
+			velocity = Vector2(0,SPEED*-1)
 		Vector2(0,1):
-			velocity = Vector2(0,SPEED * 1)
+			velocity = Vector2(0,SPEED)
 		
 	label.text = str(inputdirection)
 	if screen_position.y > 300 or screen_position.y < -300:
