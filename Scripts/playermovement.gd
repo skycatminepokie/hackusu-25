@@ -18,7 +18,16 @@ func _ready():
 		animation.animation = "player1"
 	if name == "Player2":
 		area.collision_layer = 3
+		area.collision_mask = 3
 		animation.animation = "player2"
+	if name == "Player3":
+		area.collision_layer = 4
+		area.collision_mask = 4
+		animation.animation = "player3"
+	if name == "Player4":
+		area.collision_layer = 5
+		area.collision_mask = 5
+		animation.animation = "player4"
 func _physics_process(delta: float)-> void:
 	var speed = 1000
 	var inputdirection = Vector2(0,0)
@@ -32,22 +41,30 @@ func _physics_process(delta: float)-> void:
 	match inputdirection:
 		Vector2(-1,1):
 			velocity = Vector2(0,speed)
+			animation.frame = 0
 		Vector2(0,0):
 			velocity = Vector2.ZERO
 		Vector2(1,1):
 			velocity = Vector2(0,speed)
+			animation.frame = 0
 		Vector2(-1,-1):
 			velocity = Vector2(0,speed*-1)
+			animation.frame = 3
 		Vector2(1,-1):
 			velocity = Vector2(0,speed*-1)
+			animation.frame = 3
 		Vector2(1,0):
 			velocity = Vector2(speed, 0)
+			animation.frame = 2
 		Vector2(-1,0):
 			velocity = Vector2(speed*-1, 0)
+			animation.frame = 1
 		Vector2(0,-1):
 			velocity = Vector2(0, speed*-1)
+			animation.frame = 3
 		Vector2(0,1):
 			velocity = Vector2(0, speed)
+			animation.frame = 0
 		Vector2(1,1):
 			velocity = Vector2.ZERO
 	var ypush = pushback(screen_position.y, 240,840)
