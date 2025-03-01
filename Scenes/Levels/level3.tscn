@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=4 uid="uid://2he13w5w264h"]
+[gd_scene load_steps=14 format=4 uid="uid://2he13w5w264h"]
 
 [ext_resource type="TileSet" uid="uid://bxi1wmx4lvepc" path="res://Assets/new_tile_set.tres" id="1_ude4m"]
 [ext_resource type="PackedScene" uid="uid://bq58ytdmv7k5h" path="res://Scenes/Walls/blueWall.tscn" id="2_xp65h"]
@@ -9,6 +9,8 @@
 [ext_resource type="PackedScene" uid="uid://bvvls7kbs45dx" path="res://Scenes/Buttons/blueButton.tscn" id="7_4lqmv"]
 [ext_resource type="PackedScene" uid="uid://c1utp0s4478i6" path="res://Scenes/Buttons/greenButton.tscn" id="8_pctbq"]
 [ext_resource type="PackedScene" uid="uid://crcexaobx5lhm" path="res://Scenes/Buttons/redButton.tscn" id="9_v6sus"]
+[ext_resource type="PackedScene" uid="uid://bf3m1gtwvtkc7" path="res://Scenes/player.tscn" id="10_rbibl"]
+[ext_resource type="PackedScene" uid="uid://xqmb1lepx0tp" path="res://Scenes/player2.tscn" id="11_py6x8"]
 
 [sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_vao37"]
 resource_name = "Components"
@@ -48,3 +50,9 @@ position = Vector2(80, 272)
 
 [node name="Button6" parent="." instance=ExtResource("9_v6sus")]
 position = Vector2(496, 144)
+
+[node name="Player" parent="." instance=ExtResource("10_rbibl")]
+position = Vector2(480, 0)
+
+[node name="Player2" parent="." instance=ExtResource("11_py6x8")]
+position = Vector2(480, 64)
