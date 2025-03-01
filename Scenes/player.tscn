@@ -1,13 +1,34 @@
-[gd_scene load_steps=5 format=3 uid="uid://bf3m1gtwvtkc7"]
+[gd_scene load_steps=8 format=3 uid="uid://bf3m1gtwvtkc7"]
 
 [ext_resource type="Script" path="res://Scripts/playermovement.gd" id="1_odrw6"]
 [ext_resource type="Texture2D" uid="uid://d4j473i5dkwll" path="res://Assets/icon.svg" id="1_xy00n"]
+[ext_resource type="Texture2D" uid="uid://butwoykljalxv" path="res://Assets/Cats/playerOne/Forward/p1f1.png" id="3_cx21m"]
+[ext_resource type="Texture2D" uid="uid://nfubhcvtanof" path="res://Assets/Cats/playerTwo/Forward/p2f1.png" id="4_3cp11"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gjcjo"]
 size = Vector2(120, 120)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_w5dpf"]
 size = Vector2(100, 114)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_r43ln"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_cx21m")
+}],
+"loop": true,
+"name": &"player1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_3cp11")
+}],
+"loop": true,
+"name": &"player2",
+"speed": 5.0
+}]
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_odrw6")
@@ -18,6 +39,7 @@ scale = Vector2(0.82853, -0.955847)
 shape = SubResource("RectangleShape2D_gjcjo")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(-1.90735e-06, 0)
 scale = Vector2(0.78125, 0.875001)
 texture = ExtResource("1_xy00n")
@@ -27,3 +49,7 @@ texture = ExtResource("1_xy00n")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(0, 1)
 shape = SubResource("RectangleShape2D_w5dpf")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_r43ln")
+animation = &"player2"

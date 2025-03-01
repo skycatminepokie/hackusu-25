@@ -1,6 +1,7 @@
 extends CharacterBody2D
 @onready var area = $Area2D
 @onready var camera = $"../Camera2D"
+@onready var animation = $"AnimatedSprite2D"
 signal pushcamera(direction)
 func pushback(number,smallnumber,bignumber):
 	var newnumber = 0
@@ -14,8 +15,10 @@ func _ready():
 	if name == "Player":
 		area.collision_layer = 2
 		area.collision_mask = 2
+		animation.animation = "player1"
 	if name == "Player2":
 		area.collision_layer = 3
+		animation.animation = "player2"
 func _physics_process(delta: float)-> void:
 	var speed = 1000
 	var inputdirection = Vector2(0,0)
