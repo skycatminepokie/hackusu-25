@@ -1,34 +1,43 @@
-[gd_scene load_steps=4 format=3 uid="uid://iuu8ot58b1ln"]
+[gd_scene load_steps=7 format=3 uid="uid://iuu8ot58b1ln"]
 
 [ext_resource type="PackedScene" uid="uid://bf3m1gtwvtkc7" path="res://Scenes/player.tscn" id="1_pvv7p"]
+[ext_resource type="Script" path="res://Scenes/Levels/level_1.gd" id="1_stwi0"]
 [ext_resource type="PackedScene" uid="uid://crcexaobx5lhm" path="res://Scenes/Buttons/redButton.tscn" id="2_sas5p"]
-[ext_resource type="PackedScene" uid="uid://de2p726clrlc" path="res://Scenes/stairs.tscn" id="3_gbs3x"]
+[ext_resource type="PackedScene" uid="uid://dm7pi0jr3cpwr" path="res://Scenes/stairs.tscn" id="3_gbs3x"]
+[ext_resource type="Script" path="res://Scenes/stairs.gd" id="4_42i5f"]
+[ext_resource type="PackedScene" uid="uid://bsewpb8lbrc5d" path="res://Scenes/camera_2d.tscn" id="6_he71c"]
 
 [node name="Level1" type="Node2D"]
+script = ExtResource("1_stwi0")
 
 [node name="Button" parent="." instance=ExtResource("2_sas5p")]
-position = Vector2(384, 768)
+position = Vector2(320, 224)
 
 [node name="Button2" parent="." instance=ExtResource("2_sas5p")]
-position = Vector2(384, -64)
+position = Vector2(1504, 224)
 
 [node name="Button3" parent="." instance=ExtResource("2_sas5p")]
-position = Vector2(1472, -64)
+position = Vector2(320, 608)
 
 [node name="Button4" parent="." instance=ExtResource("2_sas5p")]
-position = Vector2(1472, 768)
+position = Vector2(1504, 640)
 
 [node name="Stairs" parent="." instance=ExtResource("3_gbs3x")]
+visible = false
 position = Vector2(960, 384)
+script = ExtResource("4_42i5f")
 
 [node name="Player" parent="." instance=ExtResource("1_pvv7p")]
-position = Vector2(704, 1024)
+position = Vector2(384, 832)
 
 [node name="Player2" parent="." instance=ExtResource("1_pvv7p")]
-position = Vector2(896, 1024)
+position = Vector2(544, 832)
 
 [node name="Player3" parent="." instance=ExtResource("1_pvv7p")]
-position = Vector2(1088, 1024)
+position = Vector2(704, 832)
 
 [node name="Player4" parent="." instance=ExtResource("1_pvv7p")]
-position = Vector2(1280, 1024)
+position = Vector2(864, 832)
+
+[node name="Camera2D" parent="." instance=ExtResource("6_he71c")]
+position = Vector2(896, 832)

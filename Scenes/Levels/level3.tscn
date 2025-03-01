@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=4 uid="uid://2he13w5w264h"]
+[gd_scene load_steps=14 format=4 uid="uid://2he13w5w264h"]
 
 [ext_resource type="TileSet" uid="uid://bxi1wmx4lvepc" path="res://Assets/new_tile_set.tres" id="1_ude4m"]
 [ext_resource type="PackedScene" uid="uid://bq58ytdmv7k5h" path="res://Scenes/Walls/blueWall.tscn" id="2_xp65h"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://bvvls7kbs45dx" path="res://Scenes/Buttons/blueButton.tscn" id="7_4lqmv"]
 [ext_resource type="PackedScene" uid="uid://c1utp0s4478i6" path="res://Scenes/Buttons/greenButton.tscn" id="8_pctbq"]
 [ext_resource type="PackedScene" uid="uid://crcexaobx5lhm" path="res://Scenes/Buttons/redButton.tscn" id="9_v6sus"]
+[ext_resource type="PackedScene" uid="uid://bsewpb8lbrc5d" path="res://Scenes/camera_2d.tscn" id="10_irgis"]
 [ext_resource type="PackedScene" uid="uid://bf3m1gtwvtkc7" path="res://Scenes/player.tscn" id="10_rbibl"]
 
 [sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_vao37"]
@@ -21,12 +22,6 @@ scenes/4/scene = ExtResource("5_m72he")
 [sub_resource type="TileSet" id="TileSet_4rsor"]
 tile_size = Vector2i(120, 120)
 sources/0 = SubResource("TileSetScenesCollectionSource_vao37")
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_dn8iq"]
-size = Vector2(165, 1129.75)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_8rb5g"]
-size = Vector2(2123.75, 124)
 
 [node name="Level3" type="Node2D"]
 
@@ -56,35 +51,7 @@ position = Vector2(80, 272)
 [node name="Button6" parent="." instance=ExtResource("9_v6sus")]
 position = Vector2(496, 144)
 
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(0, -5)
-
-[node name="StaticBody2D" type="StaticBody2D" parent="Camera2D"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Camera2D/StaticBody2D"]
-position = Vector2(-1042, 0.875)
-shape = SubResource("RectangleShape2D_dn8iq")
-
-[node name="StaticBody2D2" type="StaticBody2D" parent="Camera2D"]
-position = Vector2(-549.557, -643.712)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Camera2D/StaticBody2D2"]
-position = Vector2(1598.56, 638.962)
-shape = SubResource("RectangleShape2D_dn8iq")
-
-[node name="StaticBody2D3" type="StaticBody2D" parent="Camera2D"]
-position = Vector2(0, 13)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Camera2D/StaticBody2D3"]
-position = Vector2(81.125, -619)
-shape = SubResource("RectangleShape2D_8rb5g")
-
-[node name="StaticBody2D3" type="StaticBody2D" parent="Camera2D/StaticBody2D3"]
-position = Vector2(-183.561, 736.672)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Camera2D/StaticBody2D3/StaticBody2D3"]
-position = Vector2(188.561, -143.672)
-shape = SubResource("RectangleShape2D_8rb5g")
+[node name="Camera2D" parent="." instance=ExtResource("10_irgis")]
 
 [node name="Button7" parent="." instance=ExtResource("6_mpmlh")]
 position = Vector2(240, 80)

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://doivbv275k54y"
-path="res://.godot/imported/BluePath.png-806a50b748c240d2a3a4a4b2c8c86c0d.ctex"
+uid="uid://cg2haha86v2sq"
+path="res://.godot/imported/greenPath.png-c75bd9c14fa3a2824ba70960c45f84af.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/BluePath.png"
-dest_files=["res://.godot/imported/BluePath.png-806a50b748c240d2a3a4a4b2c8c86c0d.ctex"]
+source_file="res://Assets/Paths/greenPath.png"
+dest_files=["res://.godot/imported/greenPath.png-c75bd9c14fa3a2824ba70960c45f84af.ctex"]
 
 [params]
 
