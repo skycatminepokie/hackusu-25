@@ -1,7 +1,6 @@
-[gd_scene load_steps=22 format=3 uid="uid://bf3m1gtwvtkc7"]
+[gd_scene load_steps=21 format=3 uid="uid://bf3m1gtwvtkc7"]
 
 [ext_resource type="Script" path="res://Scripts/playermovement.gd" id="1_odrw6"]
-[ext_resource type="Texture2D" uid="uid://d4j473i5dkwll" path="res://Assets/icon.svg" id="1_xy00n"]
 [ext_resource type="Texture2D" uid="uid://butwoykljalxv" path="res://Assets/Cats/playerOne/Forward/p1f1.png" id="3_cx21m"]
 [ext_resource type="Texture2D" uid="uid://nfubhcvtanof" path="res://Assets/Cats/playerTwo/Forward/p2f1.png" id="4_3cp11"]
 [ext_resource type="Texture2D" uid="uid://d0pkep12mik1f" path="res://Assets/Cats/playerOne/Left/p1l1.png" id="4_6jyb6"]
@@ -97,20 +96,12 @@ animations = [{
 }]
 
 [node name="Player" type="CharacterBody2D"]
-collision_layer = 0
-collision_mask = 0
 script = ExtResource("1_odrw6")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(5.4186e-07, -1.11262e-06)
 scale = Vector2(0.82853, -0.955847)
 shape = SubResource("RectangleShape2D_gjcjo")
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
-visible = false
-position = Vector2(-1.90735e-06, 0)
-scale = Vector2(0.78125, 0.875001)
-texture = ExtResource("1_xy00n")
 
 [node name="Area2D" type="Area2D" parent="."]
 
